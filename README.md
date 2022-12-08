@@ -119,9 +119,11 @@ The [dataset](https://public.roboflow.com/object-detection/mask-wearing) used in
 from IPython.display import Image
 Image(filename='/content/yolov5/runs/train/exp/train_batch0.jpg', width=1000)
 ```
+
 <div align="center"> 
   <img src="https://github.com/wassima-manssour/YOLOv5-face-mask-detection/blob/main/README-face-mask-detection/img4.png" alt="screenshot" />
 </div>
+
 7. Detect the mask on a testing image
 ```
 !python detect.py --source /content/test/images/1224331650_g_400-w_g_jpg.rf.483a35a2395bf48e96783587a59fe876.jpg --weights /content/yolov5/runs/train/exp/weights/best.pt --conf 0.35
@@ -131,9 +133,12 @@ Image(filename='/content/yolov5/runs/train/exp/train_batch0.jpg', width=1000)
 ```
 Image(filename='/content/yolov5/runs/detect/exp2/1224331650_g_400-w_g_jpg.rf.483a35a2395bf48e96783587a59fe876.jpg', width=1000)
 ```
+
 <div align="center"> 
   <img src="https://github.com/wassima-manssour/YOLOv5-face-mask-detection/blob/main/README-face-mask-detection/img3.png" alt="screenshot" />
 </div>
+
+
 9. Test the detection model on a video
 ```
 !python detect.py --source /content/video-test.mp4 --weights /content/yolov5/runs/train/exp/weights/best.pt --conf 0.35
